@@ -6,7 +6,7 @@ public class BinarySearchTree extends Node {
 	public BinarySearchTree(){
 	}
 	public BinarySearchTree(int data){
-		
+		root = new Node(data);
 	}
 	public Node getRoot(){
 		return this.root;
@@ -15,21 +15,10 @@ public class BinarySearchTree extends Node {
 		return size;
 	}
 	public void insert(int data){
-		root.insert(data);
+		this.root.insert(data);
 		size ++;
 	}
-//	public String toString(){
-//		
-//	}
-//	public void insert(int data){
-//		Node cur = new Node(data);
-//		Node iter = this.root;
-//		if (data <= iter.getData()){
-//			iter.getLeft().insert(data);
-//		}else{
-//			iter.getRight().insert(data);
-//		}
-//	}
-	
-
+	public String toString(){
+		return this.root.toString();
+	}
 }
