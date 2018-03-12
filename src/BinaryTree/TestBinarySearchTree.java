@@ -1,22 +1,20 @@
 package BinaryTree;
-
+import java.util.Random;
 public class TestBinarySearchTree {
 
 	public static void main(String[] args) {
-		int a = 14;
+		int a = 500;
+		Random random = new Random();
 		BinarySearchTree bst = new BinarySearchTree(a);
-		bst.insert(12);
-		bst.insert(13);
-		bst.insert(16);
-		bst.insert(25);
-		bst.insert(11);
-		bst.insert(17);
-		bst.insert(21);
-		bst.insert(10);
-		System.out.println(bst.toString());
+		for (int i = 0; i<= 975; i++)
+		{
+			int n = random.nextInt(5000) + 1;
+			bst.insert(n);
+		}
+		//System.out.println(bst.toString());
 		System.out.println("in order traversal  : " + bst.inOrder());
-		System.out.println("pre order traversal : " + bst.preOrder());
-		System.out.println("post order traversal: " + bst.postOrder());
+		//System.out.println("pre order traversal : " + bst.preOrder());
+		//System.out.println("post order traversal: " + bst.postOrder());
 	}
 
 }
