@@ -61,4 +61,40 @@ public class Node {
 		}
 		return "<" + this.data + ","+left.toString()+","+right.toString()+">";
 	}
+	public String inOrder(){
+		if (left == null && right == null){
+			return String.valueOf(this.getData());
+		}
+		if (left == null){
+			return this.getData() +" "+ this.getRight().inOrder();
+		}
+		if (right == null){
+			return this.getLeft().inOrder() + " "+this.getData();
+		}
+		return this.getLeft().inOrder() +" "+ this.getData() +" "+ this.getRight().inOrder();
+	}
+	public String preOrder(){
+		if (left == null && right == null){
+			return String.valueOf(this.getData());
+		}
+		if (left == null){
+			return this.getData() +" "+ this.getRight().preOrder();
+		}
+		if (right == null){
+			return this.getData()+" "+this.getLeft().preOrder();
+		}
+		return  this.getData()+" "+this.getLeft().preOrder() +" "+ this.getRight().preOrder();
+	}
+	public String postOrder(){
+		if (left == null && right == null){
+			return String.valueOf(this.getData());
+		}
+		if (left == null){
+			return  this.getRight().postOrder()+ " "+this.getData();
+		}
+		if (right == null){
+			return this.getLeft().postOrder()+ " " +this.getData();
+		}
+		return this.getLeft().postOrder() +" "+ this.getRight().postOrder()+" "+this.getData();
+	}
 }

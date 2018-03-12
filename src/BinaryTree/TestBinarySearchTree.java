@@ -10,7 +10,13 @@ public class TestBinarySearchTree {
 		bst.insert(16);
 		bst.insert(25);
 		bst.insert(11);
+		bst.insert(17);
+		bst.insert(21);
+		bst.insert(10);
 		System.out.println(bst.toString());
+		System.out.println("in order traversal  : " + bst.inOrder());
+		System.out.println("pre order traversal : " + bst.preOrder());
+		System.out.println("post order traversal: " + bst.postOrder());
 	}
 
 }

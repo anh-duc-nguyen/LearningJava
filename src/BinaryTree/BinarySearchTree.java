@@ -21,4 +21,13 @@ public class BinarySearchTree extends Node {
 	public String toString(){
 		return this.root.toString();
 	}
+	public String inOrder(){
+		return this.root.inOrder();
+	}
+	public String preOrder(){
+		return this.root.preOrder();
+	}
+	public String postOrder(){
+		return this.root.postOrder();
+	}
 }
