@@ -1,6 +1,11 @@
 package BinaryTree;
 
 public class BinarySearchTree extends Node {
+	/*
+	 * A simple Binary Search Tree of int number
+	 * @author: Anh Nguyen
+	 * @version: May 18
+	 */
 	private Node root;
 	private long size;
 	public BinarySearchTree(){

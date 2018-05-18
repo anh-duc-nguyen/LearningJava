@@ -1,5 +1,10 @@
 package LinkedList;
 public class Node {
+	/*
+	 * Node class for a Linked List
+	 * @author: Anh Nguyen
+	 * @version May 18, 2018
+	 */
 	private Node next;
 	private Object data;
 	public Node(){

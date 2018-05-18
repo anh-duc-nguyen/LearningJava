@@ -1,6 +1,11 @@
 package BinaryTree;
 
 public class Node {
+	/*
+	 * A simple Node class for a Binary Tree
+	 * @author: Anh Nguyen
+	 * @version: May 19, 2018
+	 */
 	private int data;
 	private Node left = null;
 	private Node right = null;

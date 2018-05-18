@@ -1,6 +1,9 @@
 package BinaryTree;
 import java.util.Random;
 public class TestBinarySearchTree {
+	/*
+	 * a Test program for Binary Search Tree
+	 */
 
 	public static void main(String[] args) {
 		int a = 500;

@@ -1,6 +1,9 @@
 package BinaryTree;
 
 public class TestNode {
+	/*
+	 * A test program for a Node of a Binary Search Tree
+	 */
 	public static void main(String[] args){
 		Node a = new Node(12);
 		a.insert(11);

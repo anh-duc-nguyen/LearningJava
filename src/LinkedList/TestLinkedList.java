@@ -1,5 +1,8 @@
 package LinkedList;
 public class TestLinkedList {
+	/*
+	 * test program for a Linked List
+	 */
 
 	public static void main(String[] args) {
 		int a = 12;
